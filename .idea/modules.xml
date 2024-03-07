@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/react-native-spring-boot-app.iml" filepath="$PROJECT_DIR$/.idea/react-native-spring-boot-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server-side.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server-side.main.iml" />
     </modules>
   </component>
 </project>

@@ -6,6 +6,21 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
-    
-    <include file=" db/changelog/db.changelog-1.0.xml"/>
+
+
+    <changeSet id="1" author="sca">
+        <sql>
+            CREATE TABLE user (
+                id BIGINT NOT NULL AUTO_INCREMENT,
+            username VARCHAR(255) NOT NULL,
+            password VARCHAR(255) NOT NULL,
+            name VARCHAR(255) NOT NULL,
+            role VATCHAR(255) NOT NULL,
+            CONSTRAIT PK_id PRIMARY KEY (id)
+            );
+        </sql>
+        <rollback>
+            DROP table user;
+        </rollback>
+    </changeSet>
 </databaseChangeLog>
